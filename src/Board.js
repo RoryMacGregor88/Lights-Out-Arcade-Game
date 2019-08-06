@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Cell from './Cell';
-import './Board.css';
+import './Style.css';
 
 class Board extends Component {
     constructor(props) {
