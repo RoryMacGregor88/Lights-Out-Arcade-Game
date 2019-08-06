@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Style.css';
+import './sass/main.scss';
 
 class Cell extends Component {
     constructor(props) {

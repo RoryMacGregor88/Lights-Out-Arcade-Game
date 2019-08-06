@@ -1,12 +1,15 @@
-.Cell {
-    background-color: red;
-}
+* {
+  margin: none;
+  padding: none; }
 
-.Cell-lit {
-    background-color: black;
-}
+body {
+  background-color: #333; }
+
+.Cell {
+  background-color: #2CFCEF; }
+  .Cell-lit {
+    background-color: #FA23E2; }
 
 td {
-    width: 200px;
-    height: 200px;
-}
+  width: 200px;
+  height: 200px; }

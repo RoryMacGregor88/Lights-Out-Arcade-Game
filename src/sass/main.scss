@@ -1,0 +1,25 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+$primary-green: #2CFCEF;
+$secondary-pink: #FA23E2; 
+$tertiary-black: #333;
+
+body {
+    background-color: $tertiary-black;
+}
+
+.Cell {
+    background-color: $primary-green;
+
+    &-lit {
+    background-color: $secondary-pink;
+}
+}
+
+td {
+    width: 200px;
+    height: 200px;
+}
