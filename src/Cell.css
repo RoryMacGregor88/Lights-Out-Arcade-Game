@@ -1,0 +1,12 @@
+.Cell {
+    background-color: red;
+}
+
+.Cell-lit {
+    background-color: black;
+}
+
+td {
+    width: 200px;
+    height: 200px;
+}

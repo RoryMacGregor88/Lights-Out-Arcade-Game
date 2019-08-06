@@ -4,12 +4,7 @@ import './Board.css';
 
 class Board extends Component {
     constructor(props) {
-        super(props){
-    }
-    render() { 
-        return ( 
-
-         );
+        super(props)
     }
 
     createBoard() {
@@ -24,13 +19,18 @@ class Board extends Component {
 
     render() {
         return (
-            <div>
-                <table>
+                <table className='Board'>
                     <tbody>
-                        <tr></tr>
+                        <tr>
+                            <Cell isLit={true} />
+                            <Cell isLit={false} />
+                            <Cell isLit={true} />
+                            <Cell isLit={false} />
+                            <Cell isLit={true} />
+                            <Cell isLit={true} />
+                        </tr>
                     </tbody>
                 </table>
-            </div>
         )
     }
 }
