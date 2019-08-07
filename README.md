@@ -6,8 +6,9 @@ https://rm-lights-out.herokuapp.com/
 
 ## Rules:
 
-Pink: on
-Green: off
+Pink: on 
+
+Green: off 
 
 Clicking a square will flip it on/off, but will also flip all squares above, below, left and right of itself.
 
