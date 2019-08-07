@@ -15,7 +15,7 @@ class Board extends Component {
             hasWon: false,
             board: this.createBoard()
         }
-    this.win = this.win.bind(this);
+    this.reset = this.reset.bind(this);
     }
 
     createBoard() {
@@ -55,7 +55,7 @@ class Board extends Component {
         this.setState({board, hasWon}); 
     }
 
-    win() {
+    reset() {
         this.setState({
             hasWon: false,
             Board: this.createBoard()
@@ -67,7 +67,7 @@ class Board extends Component {
             return (
                 <div id="you-win" className="title">
                     <h1 className="out">WIN!</h1>
-                    <h6 onClick={this.win} className="lights">Play Again?</h6>
+                    <h6 onClick={this.reset} className="lights">Play Again?</h6>
                 </div>
             )
         } 
