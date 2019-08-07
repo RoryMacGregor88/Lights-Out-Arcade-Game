@@ -76,7 +76,10 @@ class Board extends Component {
 
         return (
             <div>
-                <h1 className='title'>BOARD</h1>
+                <div class="title">
+                    <h3 class="lights">Lights</h3>
+                    <h1 class="out">OUT</h1>
+                </div>
                 <table className='board'>
                     <tbody>
                         {tblBoard}
