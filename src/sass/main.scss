@@ -14,17 +14,37 @@ body {
     background-color: $tertiary-black;
 }
 
+.board {
+    border-radius: 10px;
+    box-shadow: 0 0 50px #ffffff, -10px 0 80px $secondary-pink, 10px 0 80px $primary-green;
+}
+
+table tr:first-child td:first-child {
+    border-radius: 9px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+    border-radius: 0 9px 0 0 !important;
+}
+table tr:last-child td:last-child {
+    border-radius: 0 0 9px 0 !important;
+}
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 9px !important;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    border-radius: 1px;
+    transition: background-color 1s ease;
+}
+
 .Cell {
     background-color: $primary-green;
 
     &-lit {
     background-color: $secondary-pink;
-}
-}
-
-td {
-    width: 100px;
-    height: 100px;
+    }
 }
 
 .title {
