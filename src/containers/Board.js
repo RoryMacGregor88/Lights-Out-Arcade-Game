@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Cell from '../containers/Cell';
+import Cell from '../components/Cell';
 import '../css/style.css';
 
 class Board extends Component {
