@@ -8,7 +8,7 @@
 
 $primary-green: #2CFCEF;
 $secondary-pink: #FA23E2; 
-$tertiary-black: #333;
+$tertiary-black: #a10eec;
 
 body {
     background-color: $tertiary-black;
@@ -53,6 +53,7 @@ td {
 
 .title {
   position: relative;
+  margin-top: 1em;
   text-align: center;
 }
 

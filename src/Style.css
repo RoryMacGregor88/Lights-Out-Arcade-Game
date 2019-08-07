@@ -5,7 +5,7 @@
   padding: 0 auto; }
 
 body {
-  background-color: #333; }
+  background-color: #a10eec; }
 
 .board {
   border-radius: 10px;
@@ -39,6 +39,7 @@ td {
 
 .title {
   position: relative;
+  margin-top: 1em;
   text-align: center; }
 
 .lights {
