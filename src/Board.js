@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Cell from './Cell';
-import '../src/style.css';
+import '../src/sass/main.scss';
 
 class Board extends Component {
     static defaultProps = {
