@@ -35,9 +35,8 @@ class Board extends Component {
         let {ncols, nrows} = this.props;
         let board = this.state.board;
         let [y, x] = coord.split('-').map(Number);
-        let hasWon = false;
 
-        function flipCell(y, x) {
+        function flipCell(y, x) { 
             
             if (x >= 0 && x < ncols && y >= 0 && y < nrows) {
                 board[y][x] = !board[y][x];
@@ -50,10 +49,15 @@ class Board extends Component {
         flipCell(x, y+1);
         flipCell(x+1, y);
 
-        this.setState({board, hasWon});
+        let hasWon = board.every(row => row.every(cell => !cell));
+
+        this.setState({board, hasWon}); 
     }
 
     render() {
+        if (this.state.hasWon) {
+            return <h1>YOU WON!</h1>
+        } 
 
         let tblBoard = [];
         for (let y = 0; y < this.props.nrows; y++) {
@@ -72,7 +76,7 @@ class Board extends Component {
 
         return (
             <div>
-                <h1>BOARD</h1>
+                <h1 className='title'>BOARD</h1>
                 <table className='board'>
                     <tbody>
                         {tblBoard}

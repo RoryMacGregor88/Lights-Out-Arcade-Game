@@ -1,11 +1,17 @@
 * {
-    margin: none;
-    padding: none;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 $primary-green: #2CFCEF;
 $secondary-pink: #FA23E2; 
 $tertiary-black: #333;
+
+.title {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 body {
     background-color: $tertiary-black;
@@ -20,6 +26,6 @@ body {
 }
 
 td {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
