@@ -15,6 +15,7 @@ class Board extends Component {
             hasWon: false,
             board: this.createBoard()
         }
+    this.win = this.win.bind(this);
     }
 
     createBoard() {
@@ -54,9 +55,21 @@ class Board extends Component {
         this.setState({board, hasWon}); 
     }
 
+    win() {
+        this.setState({
+            hasWon: false,
+            Board: this.createBoard()
+        })
+    }
+
     render() {
         if (this.state.hasWon) {
-            return <h1>YOU WON!</h1>
+            return (
+                <div id="you-win" className="title">
+                    <h1 className="out">WIN!</h1>
+                    <h6 onClick={this.win} className="lights">Play Again?</h6>
+                </div>
+            )
         } 
 
         let tblBoard = [];
