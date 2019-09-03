@@ -4,6 +4,9 @@ Classic arcade game built with React and styled with Sass for that 80s aesthetic
 
 https://rm-lights-out.herokuapp.com/
 
+![](public/images/lights-out.png)
+![](public/images/win.png)
+
 ## Rules:
 
 Pink: on / Green: off 
